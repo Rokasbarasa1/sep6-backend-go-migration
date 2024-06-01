@@ -1,0 +1,15 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /test                     --> main.main.func1 (3 handlers)
+[GIN-debug] GET    /todos                    --> express-to-gin/routes.InitTodos.func1 (3 handlers)
+[GIN-debug] POST   /todos                    --> express-to-gin/routes.InitTodos.func2 (3 handlers)
+[GIN-debug] DELETE /todos                    --> express-to-gin/routes.InitTodos.func3 (3 handlers)
+[GIN-debug] PUT    /todos                    --> express-to-gin/routes.InitTodos.func4 (3 handlers)
+[GIN-debug] GET    /comments/getFirstOrderComments/:movieId/:number/:offset --> express-to-gin/routes.InitComments.func1 (6 handlers)
+[GIN-debug] GET    /comments/getSecondOrderComments/:movieId/:commentId/:number/:offset --> express-to-gin/routes.InitComments.func2 (7 handlers)
+[GIN-debug] POST   /comments                 --> express-to-gin/routes.InitComments.func3 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8000
